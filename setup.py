@@ -29,13 +29,13 @@ class RunTests(Command):
 
 
 setup(
-    name = 'skele',
+    name = 'dhandaulat',
     version = __version__,
-    description = 'A skeleton command line program in Python.',
+    description = 'A Currency converter command line program in Python.',
     long_description = long_description,
-    url = 'https://github.com/rdegges/skele-cli',
-    author = 'Randall Degges',
-    author_email = 'r@rdegges.com',
+    url = 'https://github.com/Shivang-Bhandari/DhanDaulat',
+    author = 'Shivang Bhandari',
+    author_email = 'pump382156@gmail.com',
     license = 'UNLICENSE',
     classifiers = [
         'Intended Audience :: Developers',
@@ -60,7 +60,7 @@ setup(
     },
     entry_points = {
         'console_scripts': [
-            'skele=skele.cli:main',
+            'dhandaulat=dhandaulat.cli:main',
         ],
     },
     cmdclass = {'test': RunTests},
