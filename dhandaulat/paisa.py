@@ -2,6 +2,7 @@
 
 import requests
 
+
 def main():
     print("Enter the amount to Convert from USD to INR : ")
 
@@ -9,7 +10,7 @@ def main():
     toConvert = input()
 
     # fetches current price for USD
-    response = requests.get(url="http://www.apilayer.net/api/live?access_key=8afdbe8d25317768468dbe6fe5725fd7&format=1")
+    response = requests.get(url="https://goo.gl/PbAhsZ")
 
     # converts the response
     jsonResponse = response.json()
@@ -20,11 +21,7 @@ def main():
     # fetches USD to INR Conversion rate
     usdinr = priceList["USDINR"]
 
-
     # Output
     print("The current USD Price is : Rs." + str(usdinr))
 
     print(float(toConvert) * usdinr)
-
-
-
