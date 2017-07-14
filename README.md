@@ -10,4 +10,4 @@ A simple Python CLI Tool which uses the `currencylayer` API to fetch the current
 * requests
 
 ### Usage : 
-> Run `pip install --editable .` in the root directory and SKADOOSH.     After the install is successfull, simple type dhandaulat in a terminal window and the script is up and running.
+> Run `pip install --editable .` in the root directory and SKADOOSH.     After the install is successfull, simple type `dhandaulat` in a terminal window and the script is up and running.
