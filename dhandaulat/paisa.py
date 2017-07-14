@@ -1,22 +1,23 @@
-#!/Users/grim/anaconda/bin/python3
+#!/Users/bin/python3
 
 import requests
 
-print("Enter the amount to Convert from USD to INR : ")
+def main():
+    print("Enter the amount to Convert from USD to INR : ")
 
-toConvert = input()
+    toConvert = input()
 
-response = requests.get(url="http://www.apilayer.net/api/live?access_key=8afdbe8d25317768468dbe6fe5725fd7&format=1")
+    response = requests.get(url="http://www.apilayer.net/api/live?access_key=8afdbe8d25317768468dbe6fe5725fd7&format=1")
 
-jsonResponse = response.json()
+    jsonResponse = response.json()
 
-priceList= jsonResponse["quotes"]
+    priceList = jsonResponse["quotes"]
 
-usdinr = priceList["USDINR"]
+    usdinr = priceList["USDINR"]
 
-print("The current USD Price is : Rs."+str(usdinr))
+    print("The current USD Price is : Rs." + str(usdinr))
 
-print(float(toConvert)*usdinr)
+    print(float(toConvert) * usdinr)
 
 
 
